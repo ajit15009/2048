@@ -35,7 +35,9 @@ public class 2048
 	public static int checkTermination()
 	{
 		int count=0;
-		for(int i=0;i<4;i++)
+		int i;
+		i=0;
+		while(i<4)
 		{
 			for(int j=0;j<4;j++)
 			{
@@ -44,6 +46,7 @@ public class 2048
 					count++;
 				}
 			}
+			i++;
 		}
 		if(count==0)
 		{
